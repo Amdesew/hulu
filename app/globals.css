@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Swiper Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px !important;
+  height: 30px !important;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 12px !important;  /* Smaller arrow size */
+  font-weight: bold;
+  color: #666;  /* Lighter color */
+}
+
+.swiper-button-prev {
+  left: 3px !important;
+}
+
+.swiper-button-next {
+  right: 3px !important;
+}
+
+/* Make cards fill the container */
+.swiper-slide {
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+}
